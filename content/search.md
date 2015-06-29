@@ -70,7 +70,6 @@ Search for products
 | `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
 | `company: string` | false    | `GET /api/search?company=lundia` will get all products by company.  |
 | `primary: string` | false    | `GET /api/search?primary=chair` will get all products found for the primary category provided.  |
-| `secondary: string` | false    | `GET /api/search?primary=&secondary=` will get all products found for the primary and secondary categories provided.  
-when using the secondary category the primary category must be included|
+| `secondary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards` will get all products found for the primary and secondary categories provided. When using the secondary category the primary category must be included|
 | `tertiary: string` | false    | `GET /api/search?search=chair` will get all products found for the primary, secondary, and tertiary categories provided.  |
 | `page: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
