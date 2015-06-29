@@ -4,7 +4,7 @@ Categories
 Get Primary Categories
 ----------------------
 
- - `GET /api/category/primaries` will return all subscriptions.
+ - `GET /api/category/primaries` will return all primary categories.
  
 ```json
 [
@@ -14,3 +14,4 @@ Get Primary Categories
   }
 ]
 ```
+
