@@ -79,7 +79,9 @@ Search for products
 
 Examples
 `GET /api/search?search=chair&company=lundia`
+
 or
+
 `GET /api/search?page=3&company=steel-and-tube&primary=cladding`
 
 **Status Codes**
