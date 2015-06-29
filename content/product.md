@@ -109,6 +109,7 @@ request for URL of the product technical file where `4e7002604ff399d11457cd39` i
 
 ```shell
 curl -XGET -u <API_KEY>:x https://api.productspec.net/api/techfile/4e7002604ff399d11457cd39/4f3881b34ff399d11457f064 -I
+
 HTTP/1.1 302 Moved Temporarily
 Content-Type: text/plain; charset=utf-8
 Date: Mon, 29 Jun 2015 22:53:36 GMT
