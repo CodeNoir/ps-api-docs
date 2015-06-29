@@ -14,3 +14,11 @@ Making Requests
 ---------------
 
 The base URL for all requsts is 'https://api.productspec.net/api/' Only https is supported.
+
+The Productspec API uses HTTP Basic authentication
+
+using cURL you would make a request like:
+
+```shell
+curl -u '<api_key>:password' https://api.productspec.net/search
+```
