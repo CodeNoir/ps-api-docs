@@ -73,11 +73,11 @@ Search for products
 | `secondary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards` gets all products found for the primary and secondary categories provided. <br> When using the secondary category the primary category must be included|
 | `tertiary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards&tertiary=pvc-weatherboards` will get all products found for the primary, secondary, and tertiary categories provided.  |
 | `page: string` | false    | `GET /api/search?page=2` returns the results for the page number provided.  |
-| Any and all of the querystring parameters may be used in conjuction with each other to create compound filters'|
+| Any and all of the querystring parameters may be used in conjuction with each other to create compound filters'
 
 **Status Codes**
-- '200 OK' will be returned if query is successful
-- '404 Not Found' will be returned if url is poorly formed
+- `200 OK` will be returned if query is successful
+- `404 Not Found` will be returned if url is poorly formed
 
 
 ```
