@@ -26,7 +26,8 @@ curl -u '<api_key>:x' https://api.productspec.net/search
 Pagination
 ----------
 Product search and filter results use pagination.  Each page has a limit of 25 products.  
-To select select a page provide the 'page=<number>' querystring parameter.
+To select select a page provide the 'page=<number>' querystring parameter.  The total number of available objects 
+will be returned in the 'total' property
 
 ```shell
 curl -u '<api_key>:x' https://api.productspec.net/search?page=2
