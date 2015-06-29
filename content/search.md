@@ -78,7 +78,7 @@ Search for products
 Any and all of the querystring parameters may be used in conjunction with 
 each other to create compounded filters.
  
-Any time a secondary or tertiary category is provided it must include 
-the parent categories 
-(e.g., if using tertiary then the secondary and primary categories must be provided as well)
+**Any time a secondary or tertiary category is provided it must include** 
+**the parent categories** 
+**(e.g., if using tertiary then the secondary and primary categories must be provided as well)**
 ```
