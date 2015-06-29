@@ -68,13 +68,8 @@ Search for products
 | Parameter     | Required | Example                                                                                                                          |
 | ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
-| ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
-| ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
-| ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
-| ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
-| ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
