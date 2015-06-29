@@ -83,6 +83,12 @@ Search for products
 }
 ```
 
+| Property | Description |
+| -------- | ------------ |
+| `total: number` | Total number of products found for the query (25 results returned per request)|
+ | `products: array of products` | Products found matching the query |
+ | `filters: array' | The filters array contains all filters that match the query provided.  Use the slug_value and filter_key to build query|
+
 **Status Codes**
 - `200 OK` will be returned if query is successful
 - `404 Not Found` will be returned if url is poorly formed
