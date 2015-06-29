@@ -79,7 +79,7 @@ Search for products
 *Any and all of the query strings parameters my be combined to better filter results*
 
 Examples
-`GET /api/search?search=chair&company=lundia`
+`GET /api/search?search=chair&company=lundia` returns products that match the chair search query and belong to the company Lundia
 
 or
 
