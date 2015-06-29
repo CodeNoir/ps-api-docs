@@ -79,11 +79,14 @@ Search for products
 *Any and all of the query strings parameters my be combined to better filter results*
 
 Examples
-`GET /api/search?search=chair&company=lundia` returns products that match the chair search query and belong to the company Lundia
 
-or
+| Query | Example |
+| ------ | ------- |
+| `GET /api/search?search=chair&company=lundia` | returns products that match the chair search query and belong to the company Lundia |
+| `GET /api/search?page=3&company=steel-and-tube&primary=cladding` | returns products that belong to the cladding primary category, belong to the company Steel &amp Tube and is 3 pages deep in the result set
 
-`GET /api/search?page=3&company=steel-and-tube&primary=cladding`
+
+
 
 **Status Codes**
 - `200 OK` will be returned if query is successful
