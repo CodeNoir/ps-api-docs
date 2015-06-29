@@ -65,6 +65,7 @@ Get Product
 ```
 
 **Product Model Properties**
+
 | Property | Description |
 | -------- | ------------ |
 | `product_id` | ID of product|
@@ -81,6 +82,7 @@ Get Product
 | `product_tech_files` | array of technical files for this product (see model description below)|
 
 **Product Technial File Properties**
+
 | Tech File Property | Description |
 | -------- | ------------ |
 | `_id` | ID of technical file - used to retrieve technial file|
