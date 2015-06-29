@@ -75,6 +75,7 @@ Search for products
 | `page: string` | false    | `GET /api/search?page=2` returns the results for the page number provided.  |
 
 **Compound Filters**
+
 *Any and all of the query strings parameters my be combined to better filter results*
 
 Examples
