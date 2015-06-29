@@ -74,10 +74,13 @@ Search for products
 | `tertiary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards&tertiary=pvc-weatherboards` will get all products found for the primary, secondary, and tertiary categories provided.  |
 | `page: string` | false    | `GET /api/search?page=2` returns the results for the page number provided.  |
 
-* Any and all of the querystring parameters may be used in conjuction with each other to create compound filters
+**Compound Filters**
+*Any and all of the query strings parameters my be combined to better filter results*
 
-* *Any time a secondary or tertiary category is provided it must include the parent categories* 
-* *(e.g., if using tertiary then the secondary and primary categories must be provided as well)*
+Examples
+`GET /api/search?search=chair&company=lundia`
+or
+`GET /api/search?page=3&company=steel-and-tube&primary=cladding`
 
 **Status Codes**
 - `200 OK` will be returned if query is successful
