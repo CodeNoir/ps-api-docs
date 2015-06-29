@@ -20,5 +20,9 @@ The Productspec API uses HTTP Basic authentication
 using cURL you would make a request like:
 
 ```shell
-curl -u '<api_key>:password' https://api.productspec.net/search
+curl -u '<api_key>:x' https://api.productspec.net/search
 ```
+
+Pagination
+----------
+Product search and filter results use pagination.  Each page has a limit of 25 
