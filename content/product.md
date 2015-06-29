@@ -106,6 +106,8 @@ Get Technical File
 
 request for URL of the product technical file where `4e7002604ff399d11457cd39` is the product id and `4f3881b34ff399d11457f064` is the id of the technial file
 
+The successful request will return a 302 Moved Temporarily containing the location of the technical file in the `Location` header.
+
 
 ```shell
 curl -XGET -u <API_KEY>:x https://api.productspec.net/api/techfile/4e7002604ff399d11457cd39/4f3881b34ff399d11457f064 -I
@@ -121,4 +123,6 @@ Content-Length: 130
 Connection: keep-alive
 ```
 
-
+**Status Codes**
+- `302 Moved Temporarily` will return the URL of the technical file in the `Location` header
+- `404 Not Found` will be returned if product is not found
