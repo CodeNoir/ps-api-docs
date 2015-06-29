@@ -6,6 +6,27 @@ Search for products
 
  - `GET /api/search` will return all products.
  
+
+
+| Parameter     | Required | Example                                                                                                                          |
+| ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
+| `company: string` | false    | `GET /api/search?company=lundia` will get all products by company.  |
+| `primary: string` | false    | `GET /api/search?primary=cladding` gets all products found for the primary category provided.  |
+| `secondary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards` gets all products found for the primary and secondary categories provided. <br> When using the secondary category the primary category must be included|
+| `tertiary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards&tertiary=pvc-weatherboards` will get all products found for the primary, secondary, and tertiary categories provided.  |
+| `page: string` | false    | `GET /api/search?page=2` returns the results for the page number provided.  |
+
+**Compound Filters**
+
+*Any and all of the query strings parameters my be combined to better filter results*
+
+
+| Compound Query | Example |
+| ------ | ------- |
+| `GET /api/search?search=chair&company=lundia` | returns products that match the chair search query and belong to the company Lundia |
+| `GET /api/search?page=3&company=steel-and-tube&primary=cladding` | returns products that belong to the cladding primary category, belong to the company Steel & Tube and is 3 pages deep in the result set
+
 ```json
 {
     "filters": [
@@ -61,28 +82,6 @@ Search for products
     "total": 75
 }
 ```
-
-
-
-
-| Parameter     | Required | Example                                                                                                                          |
-| ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
-| `company: string` | false    | `GET /api/search?company=lundia` will get all products by company.  |
-| `primary: string` | false    | `GET /api/search?primary=cladding` gets all products found for the primary category provided.  |
-| `secondary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards` gets all products found for the primary and secondary categories provided. <br> When using the secondary category the primary category must be included|
-| `tertiary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards&tertiary=pvc-weatherboards` will get all products found for the primary, secondary, and tertiary categories provided.  |
-| `page: string` | false    | `GET /api/search?page=2` returns the results for the page number provided.  |
-
-**Compound Filters**
-
-*Any and all of the query strings parameters my be combined to better filter results*
-
-
-| Compound Query | Example |
-| ------ | ------- |
-| `GET /api/search?search=chair&company=lundia` | returns products that match the chair search query and belong to the company Lundia |
-| `GET /api/search?page=3&company=steel-and-tube&primary=cladding` | returns products that belong to the cladding primary category, belong to the company Steel &amp Tube and is 3 pages deep in the result set
 
 **Status Codes**
 - `200 OK` will be returned if query is successful
