@@ -76,16 +76,11 @@ Search for products
 
 * Any and all of the querystring parameters may be used in conjuction with each other to create compound filters
 
+*Any time a secondary or tertiary category is provided it must include the parent categories* 
+*(e.g., if using tertiary then the secondary and primary categories must be provided as well)*
+
 **Status Codes**
 - `200 OK` will be returned if query is successful
 - `404 Not Found` will be returned if url is poorly formed
 
 
-```
-Any and all of the querystring parameters may be used in conjunction with 
-each other to create compounded filters.
-```
- 
-**Any time a secondary or tertiary category is provided it must include** 
-**the parent categories** 
-**(e.g., if using tertiary then the secondary and primary categories must be provided as well)**
