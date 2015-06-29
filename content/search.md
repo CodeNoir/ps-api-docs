@@ -20,21 +20,6 @@ Search for products
                     "count": 1,
                     "slug_value": "polyflor",
                     "value": "Polyflor"
-                },
-                {
-                    "count": 66,
-                    "slug_value": "poynters",
-                    "value": "Poynters"
-                },
-                {
-                    "count": 1,
-                    "slug_value": "steel-and-tube",
-                    "value": "Steel & Tube"
-                },
-                {
-                    "count": 1,
-                    "slug_value": "urban-building-products",
-                    "value": "Urban Building Products"
                 }
             ],
             "filter_key": "companies"
@@ -50,16 +35,6 @@ Search for products
                     "count": 1,
                     "slug_value": "exterior-and-landscape",
                     "value": "Exterior & Landscape"
-                },
-                {
-                    "count": 72,
-                    "slug_value": "furniture-and-interiors",
-                    "value": "Furniture & Interiors"
-                },
-                {
-                    "count": 1,
-                    "slug_value": "metal-timber-and-plastics",
-                    "value": "Metal, Timber & Plastics"
                 }
             ],
             "filter_key": "primary_categories"
