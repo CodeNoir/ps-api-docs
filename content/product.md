@@ -103,8 +103,21 @@ Get Technical File
 ------------------
 
 - `GET /api/techfile/4e7002604ff399d11457cd39/4f3881b34ff399d11457f064` 
+
 request for URL of the product technical file where `4e7002604ff399d11457cd39` is the product id and `4f3881b34ff399d11457f064` is the id of the technial file
 
 
+```shell
+curl -XGET -u ZhewtZpiIz3n:x https://api.productspec.net/api/techfile/4e7002604ff399d11457cd39/4f3881b34ff399d11457f064 -I
+HTTP/1.1 302 Moved Temporarily
+Content-Type: text/plain; charset=utf-8
+Date: Mon, 29 Jun 2015 22:53:36 GMT
+Location: https://ps-content.s3.amazonaws.com/tech/4f3881b34ff399d11457f064/jsc-timber-profile-booklet.pdf
+Server: nginx/1.6.2
+Vary: Accept, Accept-Encoding
+X-Powered-By: Express
+Content-Length: 130
+Connection: keep-alive
+```
 
 
