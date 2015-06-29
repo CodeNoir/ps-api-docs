@@ -81,10 +81,10 @@ Get Product
 
 | Tech File Property | Description |
 | -------- | ------------ |
-| `_id` | ID of technical file - used to retive file|
+| `_id` | ID of technical file - used to retrieve technial file|
 | `file_ext` | file extension|
-| `file_group` | group name of this file (e.g., warranty, BRANZ, GreenTag, etc...)|
-| `file_name` | name of file|
+| `file_group` | group name of this technial file (e.g., warranty, BRANZ, GreenTag, etc...)|
+| `file_name` | name of technial file|
 
 
 
@@ -93,10 +93,13 @@ Get Product
 - `404 Not Found` will be returned if product is not found
 
 
+
+
 Get Technical File
 ------------------
 
-- `GET /api/techfile/4e7002604ff399d11457cd39/4f3881b34ff399d11457f064` request for URL of the product technical file where `4e7002604ff399d11457cd39` is the product id and `4f3881b34ff399d11457f064` is the id of the technial file
+- `GET /api/techfile/4e7002604ff399d11457cd39/4f3881b34ff399d11457f064` 
+request for URL of the product technical file where `4e7002604ff399d11457cd39` is the product id and `4f3881b34ff399d11457f064` is the id of the technial file
 
 
 
