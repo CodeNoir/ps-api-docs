@@ -1,1 +1,1 @@
-# ps-api-docs
+# Productspec API V1
