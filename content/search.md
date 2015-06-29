@@ -93,4 +93,6 @@ Search for products
 - `200 OK` will be returned if query is successful
 - `404 Not Found` will be returned if url is poorly formed
 
+See getting a single product [here](product.md)
+
 
