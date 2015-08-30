@@ -156,7 +156,7 @@ Get Product
 
 | Tech File Property | Description |
 | -------- | ------------ |
-| `_id` | ID of technical file - used to retrieve technial file|
+| `_id` | ID of file - used to retrieve file|
 | `file_ext` | file extension|
 | `file_group` | group name of this technial file (e.g., warranty, BRANZ, GreenTag, etc...)|
 | `file_name` | name of technial file|
