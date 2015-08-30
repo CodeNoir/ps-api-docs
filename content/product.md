@@ -152,7 +152,7 @@ Get Product
 | `product_case_studies` | array of case studies where this product has been used. (see model description below)|
 
 
-**Product Technial File Properties**
+**Product Technial File, Compliance Docs, and Environmental Properties**
 
 | Tech File Property | Description |
 | -------- | ------------ |
