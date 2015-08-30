@@ -133,17 +133,24 @@ Get Product
 | Property | Description |
 | -------- | ------------ |
 | `product_id` | ID of product|
+| `product_title` | name of the product|
+| `product_slug` | slugged name of the product|
 | `company_id` | ID of company|
 | `company_name` | company name|
 | `company_logo_url` | url of logo|
-| `product_title` | name of the product|
-| `product_slug` | slugged name of the product|
-| `company_slug` | slugged name of the company|
 | `company_phone` | contact phone number of company|
 | `company_email` | contact email of company|
+| `company_slug` | slugged name of the company|
+| `product_range` | name of the range to which this product belongs|
 | `product_description` | description of the product HTML encoded|
 | `product_images` | Array of image paths for this product.  each image object has URL for small, medium, and large versions|
 | `product_tech_files` | array of technical files for this product (see model description below)|
+| `product_compliance_docs` | array of compliance files for this product (see model description below)|
+| `product_environmental_docs` | array of supporting environmental files for this product. (see model description below)|
+| `product_cads` | array of supporting CAD files for this product. (see model description below)|
+| `product_videos` | array of supporting YouTube or Vimeo urls for this product. (see model description below)|
+| `product_case_studies` | array of case studies where this product has been used. (see model description below)|
+
 
 **Product Technial File Properties**
 
