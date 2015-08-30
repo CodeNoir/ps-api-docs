@@ -6,72 +6,62 @@ Get Product
 
  - `GET /api/product/4e7002604ff399d11457cd39` will return the product with the ID of `4e7002604ff399d11457cd39`.
  
-**Product Model**
+**Product Model** 
 ```json
 {
-    "company_email": "cedarspec@jsctimber.co.nz",
-    "company_id": "48717cb74ff399d11457bc60",
-    "company_logo_url": "https://ps-content.s3.amazonaws.com/company/48717cb74ff399d11457bc60/logo/jsc-timber-logo.jpg",
-    "company_name": "JSC Timber",
-    "company_phone": "09 412 2800",
-    "company_slug": "jsc-timber",
-    "product_description": "<p>Board and Batten is a vertical design created using wide clear cedar boards spaced apart with narrow battens covering the joints, as per NZS E2/AS1 PROFILES to NZS 3617/BRANZ BULLETIN 411. There are no set limitations on widths and various combinations are used to create different looks with the most common being 6x1 and 8x1 Boards covered with 3x1 Battens. This can also be reversed with boards installed over Battens to create a deep negative channel effect.</p>",
-    "product_id": "4e7002604ff399d11457cd39",
+    "product_id": "4e9b90464ff399d11457cd6a",
+    "product_title": "Colt Euro Seefire",
+    "product_slug": "colt-euro-seefire",
+    "company_id": "462f03184ff399d11457b737",
+    "company_name": "Colt Products & Systems",
+    "company_logo_url": "https://ps-content.s3.amazonaws.com/company/462f03184ff399d11457b737/logo/logo.png",
+    "company_phone": "04 913 2072",
+    "company_email": "coltnz@aquaheat.co.nz",
+    "company_slug": "colt-products-and-systems",
+    "product_range": "Colt Natural &amp; Smoke Ventilators",
+    "product_description": "<p>Colt Euro Seefire is a natural louvred ventilator that is available in a wide range of sizes, louvre options and control options. It is suited to most industrial and commercial buildings and can provide both day to day and smoke ventilation, as well as permit the entry of natural daylight if fitted with glass or polycarbonate blades. Colt Euro Seefire can also be installed in the vertical either for low level air inlet or for high level extract. With the addition of optional extras it can provide year round weathered ventilation.</p><p>Colt Euro Seefire is manufactured to the ISO 9000 quality standard.</p>",
     "product_images": [
         {
-            "large_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e7002a14ff39ad1cc0562a2/00335web-lg.jpg",
-            "medium_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e7002a14ff39ad1cc0562a2/00335web-md.jpg",
-            "small_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e7002a14ff39ad1cc0562a2/00335web-sm.jpg"
+            "large_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb36a4ff39ad1cc056306/dsc00705-lg.JPG",
+            "medium_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb36a4ff39ad1cc056306/dsc00705-md.JPG",
+            "small_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb36a4ff39ad1cc056306/dsc00705-sm.JPG"
         },
         {
-            "large_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e7002d74ff39ad1cc0562a3/goh-house-crown-range-053-w-lg.jpg",
-            "medium_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e7002d74ff39ad1cc0562a3/goh-house-crown-range-053-w-md.jpg",
-            "small_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e7002d74ff39ad1cc0562a3/goh-house-crown-range-053-w-sm.jpg"
-        },
-        {
-            "large_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e7002f44ff39ad1cc0562a4/goh-house-crown-range-003-w-lg.jpg",
-            "medium_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e7002f44ff39ad1cc0562a4/goh-house-crown-range-003-w-md.jpg",
-            "small_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e7002f44ff39ad1cc0562a4/goh-house-crown-range-003-w-sm.jpg"
-        },
-        {
-            "large_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e70030f4ff39ad1cc0562a5/goh-house-crown-range-006-lg.jpg",
-            "medium_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e70030f4ff39ad1cc0562a5/goh-house-crown-range-006-md.jpg",
-            "small_path": "https://ps-content.s3.amazonaws.com/product/4e7002604ff399d11457cd39/images/4e70030f4ff39ad1cc0562a5/goh-house-crown-range-006-sm.jpg"
+            "large_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb3724ff39ad1cc056307/dsc00697-lg.JPG",
+            "medium_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb3724ff39ad1cc056307/dsc00697-md.JPG",
+            "small_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb3724ff39ad1cc056307/dsc00697-sm.JPG"
         }
     ],
-    "product_slug": "jsc-board-and-batten-weatherboard-system",
     "product_tech_files": [
         {
-            "_id": "4f3881b34ff399d11457f064",
+            "_id": "4e9b90904ff399d11457ef3d",
             "file_ext": ".pdf",
             "file_group": "General",
-            "file_name": "JSC Timber Profile Booklet"
+            "file_name": "Wellington Hospital"
         },
         {
-            "_id": "4f3881c94ff399d11457f065",
+            "_id": "518711e24ff399d11457fc01",
             "file_ext": ".pdf",
             "file_group": "General",
-            "file_name": "Board & Batten Direct Fixed Details"
-        },
-        {
-            "_id": "4f38821b4ff399d11457f066",
-            "file_ext": ".pdf",
-            "file_group": "General",
-            "file_name": "JSC Nail Profiles"
+            "file_name": "Seefire natural ventilator"
         }
     ],
-    "product_title": "JSC Board & Batten Weatherboard System"
-}
-```
-
-```json
-{
-    "company_email": "coltnz@aquaheat.co.nz",
-    "company_id": "462f03184ff399d11457b737",
-    "company_logo_url": "https://ps-content.s3.amazonaws.com/company/462f03184ff399d11457b737/logo/logo.png",
-    "company_name": "Colt Products & Systems",
-    "company_phone": "04 913 2072",
-    "company_slug": "colt-products-and-systems",
+    "product_compliance_docs": [
+        {
+            "_id": "518711e24ff399d11457fc01",
+            "file_ext": ".pdf",
+            "file_group": "BRANZ",
+            "file_name": "BRANZ example"
+        }
+    ],
+    "product_environmental_docs": [
+    {
+            "_id": "518711e24ff399d11457fa23",
+            "file_ext": ".pdf",
+            "file_group": "GreenTag",
+            "file_name": "Green Tag example"
+        }
+    ],
     "product_cads": [
         {
             "file_name": "euro-sf-1225-curb-02",
@@ -96,33 +86,13 @@ Get Product
             "group_name": "Outside Louvre"
         }
     ],
-    "product_case_studies": [
+    "product_videos": [
         {
-            "_id": "4e9bb0554ff399d114580aff",
-            "city": "n/a",
-            "description": "<p>The rebuilt Wellington Hospital is a strategic par t of Wellington\u2019s infrastructure so specified products had to be of an extremely high standard. Studies of the previous building had showed problems caused by salt laden sea air adver sely altering the aerodynamics and quality of air supplied to the mechanical plant. Moisture entering through inadequate louvres had also taken its toll on equipment in the p lant rooms. <br>  <br>Colt was chosen to supply its unique tr iple and double bank internationally tested louvre system for the entire project to overcome these issues. The fact that an uninter rupted louvre line could be achieved on these huge louvre banks whi lst still coping with high wind loads helped make up the specifiers mind. Colt assisted in the design of an additional 90&#186; drift eliminator incorporated within the louvre to deal with the salt and was contracted to design manufacture and install the full <br>package. </p><p>We are proud of the result.</p>",
-            "images": [
-                {
-                    "full_src": "https://ps-content.s3.amazonaws.com/case-study-image/4e9bb0564ff399d114580bfd/wellington-hospital1.jpg",
-                    "icon_src": "https://ps-content.s3.amazonaws.com/case-study-image/4e9bb0564ff399d114580bfd/wellington-hospital1_thumb.jpg",
-                    "position": "https://ps-content.s3.amazonaws.com/undefined"
-                },
-                {
-                    "full_src": "https://ps-content.s3.amazonaws.com/case-study-image/4e9bb0604ff399d114580bfe/wellington-hospital2.jpg",
-                    "icon_src": "https://ps-content.s3.amazonaws.com/case-study-image/4e9bb0604ff399d114580bfe/wellington-hospital2_thumb.jpg",
-                    "position": "https://ps-content.s3.amazonaws.com/undefined"
-                }
-            ],
-            "participants": [
-                {
-                    "_id": "54c780534e1aef9c4352a229",
-                    "job_title": "Contractor",
-                    "name": "Fletcher Construction"
-                }
-            ],
-            "project_type": "Hospitality",
-            "title": "Wellington Hospital"
-        },
+            "vimeo_url": "",
+            "youtube_url": "http://www.youtube.com/v/EH9_0I2waPA&context=C32e72c5ADOEgsToPDskIb6-CsZ9vb5TMK-It1wnS1&hl=en&fs=1&rel=0"
+        }
+    ],
+    "product_case_studies": [
         {
             "_id": "52b105a94ff399d114580b3f",
             "city": "Auckland City",
@@ -153,45 +123,6 @@ Get Product
             ],
             "project_type": "Commercial",
             "title": "ASB North Wharf"
-        }
-    ],
-    "product_compliance_docs": [],
-    "product_description": "<p>Colt Euro Seefire is a natural louvred ventilator that is available in a wide range of sizes, louvre options and control options. It is suited to most industrial and commercial buildings and can provide both day to day and smoke ventilation, as well as permit the entry of natural daylight if fitted with glass or polycarbonate blades. Colt Euro Seefire can also be installed in the vertical either for low level air inlet or for high level extract. With the addition of optional extras it can provide year round weathered ventilation.</p><p>Colt Euro Seefire is manufactured to the ISO 9000 quality standard.</p>",
-    "product_environmental_docs": [],
-    "product_id": "4e9b90464ff399d11457cd6a",
-    "product_images": [
-        {
-            "large_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb36a4ff39ad1cc056306/dsc00705-lg.JPG",
-            "medium_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb36a4ff39ad1cc056306/dsc00705-md.JPG",
-            "small_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb36a4ff39ad1cc056306/dsc00705-sm.JPG"
-        },
-        {
-            "large_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb3724ff39ad1cc056307/dsc00697-lg.JPG",
-            "medium_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb3724ff39ad1cc056307/dsc00697-md.JPG",
-            "small_path": "https://ps-content.s3.amazonaws.com/product/4e9b90464ff399d11457cd6a/images/4f5fb3724ff39ad1cc056307/dsc00697-sm.JPG"
-        }
-    ],
-    "product_range": "Colt Natural &amp; Smoke Ventilators",
-    "product_slug": "colt-euro-seefire",
-    "product_tech_files": [
-        {
-            "_id": "4e9b90904ff399d11457ef3d",
-            "file_ext": ".pdf",
-            "file_group": "General",
-            "file_name": "Wellington Hospital"
-        },
-        {
-            "_id": "518711e24ff399d11457fc01",
-            "file_ext": ".pdf",
-            "file_group": "General",
-            "file_name": "Seefire natural ventilator"
-        }
-    ],
-    "product_title": "Colt Euro Seefire",
-    "product_videos": [
-        {
-            "vimeo_url": "",
-            "youtube_url": "http://www.youtube.com/v/EH9_0I2waPA&context=C32e72c5ADOEgsToPDskIb6-CsZ9vb5TMK-It1wnS1&hl=en&fs=1&rel=0"
         }
     ]
 }
