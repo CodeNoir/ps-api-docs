@@ -12,7 +12,10 @@ Get Product
 | -------- | ------------ |
 | `casestudy` | use `?casestudy=0` to not include case studies when retrieving a product|
 | `cads` | use `?cads=0` to not include CAD files when not retrieving a product |
-| `GET /api/product/4e7002604ff399d11457cd39?cads=0&casestudy=0` to retrieve a product without cads and case studies |
+ 
+ ```
+ `GET /api/product/4e7002604ff399d11457cd39?cads=0&casestudy=0` to retrieve a product without cads and case studies 
+```
 
 **Product Model** 
 ```json
