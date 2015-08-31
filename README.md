@@ -14,15 +14,16 @@ Making Requests
 
 The base URL for all requsts is 'https://api.productspec.net/' Only https is supported.
 
-The Productspec API uses an API key that must be included in an custom HTTP request header named 'api-key'
--- The Productspec API key is used only for identification purposes and is not private.  Future versions of this API may require a private key, but for now it is public.
+The Productspec API uses an API key that must be included in an custom HTTP request header named 'api-key' for all requests except for requests for files.
+
+*The Productspec API key is used only for identification purposes and is not private.  Future versions of this API may require a private key, but for now it is public.*
 
 using cURL you would make a request like:
 
 ```shell
 curl -H 'api-key: <api_key>' -XGET 'https://api.productspec.net/api/product/4e9b90464ff399d11457cd6a'
 ```
-`*Exception: requests for files must include the api-key in the url not header*`
+`Exception: requests for files must include the api-key in the url.`
 
 
 Pagination
