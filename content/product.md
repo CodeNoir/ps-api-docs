@@ -204,6 +204,14 @@ Get Product
 | `name` | name of the participant |
 
 
+**Product Videos**
+
+| Case Study Property | Description |
+| -------- | ------------ |
+| `vimeo_url` | Vimeo url or empty string if does not exist |
+| `youtube_url` | YouTube url or empty string if does not exist |
+
+
 **Status Codes**
 - `200 OK` will be returned if query is successful
 - `404 Not Found` will be returned if product is not found
