@@ -152,7 +152,7 @@ Get Product
 | `product_case_studies` | array of case studies where this product has been used. (see model description below)|
 
 
-**Product Technial File, Compliance Docs, and Environmental Properties**
+**Product Technical File, Compliance Docs, and Environmental Properties**
 
 | Tech File Property | Description |
 | -------- | ------------ |
@@ -160,7 +160,6 @@ Get Product
 | `file_ext` | file extension|
 | `file_group` | group name of this file (e.g., warranty, BRANZ, GreenTag, etc...)|
 | `file_name` | name of file|
-
 
 
 **Status Codes**
@@ -173,27 +172,60 @@ Get Product
 Get Technical File
 ------------------
 
-- `GET /api/techfile/4e7002604ff399d11457cd39/4f3881b34ff399d11457f064` 
+- `GET /api/key/<YourApiKey>/<FileType>/<FileId>
 
-request for URL of the product technical file where `4e7002604ff399d11457cd39` is the product id and `4f3881b34ff399d11457f064` is the id of the technial file
+| Property | Description |
+| -------- | ------------ |
+| `YourApiKey` | Your api key provided to you by Productspec |
+| `FileType` | tech or cad (all files other than cad files are considered tech) |
+| `FileId` | the id of the file being requested |
 
-The successful request will return a 302 Moved Temporarily containing the location of the technical file in the `Location` header.
 
 
-```shell
-curl -XGET -u <API_KEY>:x https://api.productspec.net/api/techfile/4e7002604ff399d11457cd39/4f3881b34ff399d11457f064 -I
+- Will either return the file requested or a 404 if file is not found.
 
-HTTP/1.1 302 Moved Temporarily
-Content-Type: text/plain; charset=utf-8
-Date: Mon, 29 Jun 2015 22:53:36 GMT
-Location: https://ps-content.s3.amazonaws.com/tech/4f3881b34ff399d11457f064/jsc-timber-profile-booklet.pdf
-Server: nginx/1.6.2
-Vary: Accept, Accept-Encoding
-X-Powered-By: Express
-Content-Length: 130
-Connection: keep-alive
-```
 
-**Status Codes**
-- `302 Moved Temporarily` will return the URL of the technical file in the `Location` header
-- `404 Not Found` will be returned if product is not found
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
