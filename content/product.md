@@ -111,12 +111,10 @@ Get Product
             ],
             "participants": [
                 {
-                    "_id": "54c780534e1aef9c4352a246",
                     "job_title": "Architectural Designer",
                     "name": "BVN & Jasmax"
                 },
                 {
-                    "_id": "54c780534e1aef9c4352a245",
                     "job_title": "Contractor",
                     "name": "Fletcher Construction Ltd"
                 }
@@ -162,6 +160,7 @@ Get Product
 | `file_name` | name of file|
 
 
+
 **Product CADS**
 
 | CAD Property | Description |
@@ -177,11 +176,38 @@ Get Product
 | CAD file_types Property | Description |
 | -------- | ------------ |
 | `file_extension` | type of file (dwg, pdf, rfa, etc...)|
-| `_id` | the id of the CAD file extension (use this _id to download file.  see below)
+| `_id` | the id of the CAD file extension (use this _id to download file.  see below)|
+
+
+
+**Product Case Studies**
+
+| Case Study Property | Description |
+| -------- | ------------ |
+| `_id` | id of case study|
+| `title` | the title of the case study |
+| `city' | city location of the case study |
+| `description` | description of the case study. HTML encoded |
+| `project_type` | type of project this case study relates to |
+| `participants` | array of all the participants related to this case study (see below)|
+| `images` | array of images for this case study (see below)|
+| 
+
+| Case Study Participants Property | Description |
+| -------- | ------------ |
+| `job_title` | job title of the participant |
+| `name` | name of the participant |
+
+| Case Study Images Property | Description |
+| -------- | ------------ |
+| `job_title` | job title of the participant |
+| `name` | name of the participant |
+
 
 **Status Codes**
 - `200 OK` will be returned if query is successful
 - `404 Not Found` will be returned if product is not found
+
 
 
 
