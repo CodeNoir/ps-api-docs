@@ -169,8 +169,8 @@ Get Product
 
 
 
-Get Technical File
-------------------
+Download File (CAD, Technical, Compliance, Environmental)
+---------------------------------------------------------
 
 - `GET /api/key/<YourApiKey>/<FileType>/<FileId>
 
