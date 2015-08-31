@@ -162,6 +162,23 @@ Get Product
 | `file_name` | name of file|
 
 
+**Product CADS**
+
+| CAD Property | Description |
+| -------- | ------------ |
+| `file_name` | name of the file|
+| `file_preview_url' | url of the preview image for this CAD |
+| `group_name` | name of the group to which this CAD belongs |
+| `file_types` | array of _ids and extensions for this CAD (one CAD file may have many different file types) |
+| `file_ext` | file extension|
+| `file_group` | group name of this file (e.g., warranty, BRANZ, GreenTag, etc...)|
+| `file_name` | name of file|
+
+| CAD file_types Property | Description |
+| -------- | ------------ |
+| `file_extension` | type of file (dwg, pdf, rfa, etc...)|
+| `_id` | the id of the CAD file extension (use this _id to download file.  see below)
+
 **Status Codes**
 - `200 OK` will be returned if query is successful
 - `404 Not Found` will be returned if product is not found
