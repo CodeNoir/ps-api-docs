@@ -11,7 +11,7 @@ Get Product
 | Parameter | Value |
 | -------- | ------------ |
 | `casestudy` | Use `?casestudy=0` to not include case studies when retrieving a product.|
-| `cads` | Use `?cads=0` to not include CAD files when not retrieving a product. |
+| `cads` | Use `?cads=0` to not include CAD files when retrieving a product. |
  
  ```
  `GET /api/product/4e7002604ff399d11457cd39?cads=0&casestudy=0` 
@@ -154,12 +154,12 @@ Get Product
 | `product_range` | Name of the range to which this product belongs.|
 | `product_description` | Description of the product HTML encoded.|
 | `product_images` | Array of image paths for this product. Each image object has a URL for small, medium, and large versions.|
-| `product_tech_files` | Array of technical files for this product. (See model description below)|
-| `product_compliance_docs` | Array of compliance files for this product. (See model description below)|
-| `product_environmental_docs` | Array of supporting environmental files for this product. (See model description below)|
-| `product_cads` | Array of supporting CAD files for this product. (See model description below)|
-| `product_videos` | Array of supporting YouTube or Vimeo urls for this product. (See model description below)|
-| `product_case_studies` | Array of case studies where this product has been used. (See model description below)|
+| `product_tech_files` | Array of technical files for this product. (See model description below.)|
+| `product_compliance_docs` | Array of compliance files for this product. (See model description below.)|
+| `product_environmental_docs` | Array of supporting environmental files for this product. (See model description below.)|
+| `product_cads` | Array of supporting CAD files for this product. (See model description below.)|
+| `product_videos` | Array of supporting YouTube or Vimeo URLs for this product. (See model description below.)|
+| `product_case_studies` | Array of case studies where this product has been used. (See model description below.)|
 
 
 **Product Technical File, Compliance Docs, and Environmental Properties**
@@ -218,10 +218,10 @@ Get Product
 
 **Product Videos**
 
-| Case Study Property | Description |
+| Product Videos Property | Description |
 | -------- | ------------ |
-| `vimeo_url` | Vimeo URL or empty string if a URL does not exist. |
-| `youtube_url` | YouTube URL or empty string if a URL does not exist. |
+| `vimeo_url` | Returns a Vimeo URL or an empty string if a URL does not exist. |
+| `youtube_url` | Returns a YouTube URL or an empty string if a URL does not exist. |
 
 
 **Status Codes**
@@ -241,7 +241,7 @@ Download File (CAD, Technical, Compliance, Environmental)
 | -------- | ------------ |
 | `YourApiKey` | Your API key provided to you by Productspec. |
 | `FileType` | `tech` or `cad` (all files other than CAD files are considered tech). |
-| `FileId` | the ID of the file being requested. |
+| `FileId` | The ID of the file being requested. |
 
 
 

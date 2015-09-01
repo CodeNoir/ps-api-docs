@@ -22,7 +22,7 @@ Get Primary Categories
 | `primary` | Name of primary category.|
 | `primary_slug` | Slugged name of primary category.|
 
-*Use the `primary_slug` with the `primary` parameter when searching*
+*Use the `primary_slug` with the `primary` parameter when searching.*
  
  - `GET /api/search/primary=cladding` where `cladding` is the `primary_slug` value.
  
