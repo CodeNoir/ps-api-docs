@@ -12,7 +12,9 @@ API Objects
 Making Requests
 ---------------
 
-The base URL for all requests is 'https://api.productspec.net/' Only https is supported.
+The base URL for all requests is 'https://api.productspec.net/' 
+
+Only https is supported.
 
 The Productspec API uses an API key that must be included in an custom HTTP request header named 'api-key' for all requests except for requests for files.
 
