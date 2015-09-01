@@ -235,7 +235,7 @@ Get Product
 Download File (CAD, Technical, Compliance, Environmental)
 ---------------------------------------------------------
 
-- `GET /api/key/[YourApiKey]/[FileType]/[FileId]`
+- `GET /api/file/key/[YourApiKey]/[FileType]/[FileId]`
 
 | Property | Description |
 | -------- | ------------ |
