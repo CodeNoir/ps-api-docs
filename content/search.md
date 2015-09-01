@@ -27,7 +27,7 @@ Search for products
 | `GET /api/search?search=chair&company=lundia` | Returns products that match the 'chair' search query and belong to the company 'Lundia.' |
 | `GET /api/search?page=3&company=steel-and-tube&primary=cladding` | Returns products that belong to the 'cladding' primary category, belong to the company 'Steel & Tube' and is 3 pages deep in the result set.  |
 
-** Filter Model **
+**Filter Model**
 
 ```json
 {
