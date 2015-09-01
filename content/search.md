@@ -11,11 +11,11 @@ Search for products
 | Parameter     | Required | Example                                                                                                                          |
 | ------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `search: string` | false    | `GET /api/search?search=chair` will get all products found containing chair(s).  |
-| `company: string` | false    | `GET /api/search?company=lundia` will get all products by company.  |
-| `primary: string` | false    | `GET /api/search?primary=cladding` gets all products found for the primary category provided.  |
-| `secondary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards` gets all products found for the primary and secondary categories provided. <br> When using the secondary category the primary category must be included|
+| `company: string` | false    | `GET /api/search?company=lundia` will get all products by the company 'Lundia'.  |
+| `primary: string` | false    | `GET /api/search?primary=cladding` gets all products found for the primary category 'cladding'.  |
+| `secondary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards` gets all products found for the primary category 'cladding' and secondary category 'weatherboards'. <br> When using the secondary category the primary category must be included.|
 | `tertiary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards&tertiary=pvc-weatherboards` will get all products found for the primary, secondary, and tertiary categories provided.  |
-| `page: string` | false    | `GET /api/search?page=2` returns the results for the page number provided.  |
+| `page: string` | false    | `GET /api/search?page=2` returns the results for page number '2.'  |
 
 **Compound Filters**
 
@@ -24,8 +24,8 @@ Search for products
 
 | Compound Query | Example |
 | ------ | ------- |
-| `GET /api/search?search=chair&company=lundia` | returns products that match the chair search query and belong to the company Lundia |
-| `GET /api/search?page=3&company=steel-and-tube&primary=cladding` | returns products that belong to the cladding primary category, belong to the company Steel & Tube and is 3 pages deep in the result set
+| `GET /api/search?search=chair&company=lundia` | Returns products that match the 'chair' search query and belong to the company 'Lundia' |
+| `GET /api/search?page=3&company=steel-and-tube&primary=cladding` | Returns products that belong to the 'cladding' primary category, belong to the company 'Steel & Tube' and is 3 pages deep in the result set.  |
 
 ```json
 {
@@ -85,14 +85,14 @@ Search for products
 
 | Property | Description |
 | -------- | ------------ |
-| `total: number` | Total number of products found for the query (25 results returned per request)|
-| `products: array of products` | Products found matching the query |
-| `filters: array` | The filters array contains all filters that match the query provided.  Use the `slug_value` and `filter_key` to build query|
+| `total: number` | Total number of products found for the query (25 results returned per request).|
+| `products: array of products` | Products found matching the query. |
+| `filters: array` | The filters array contains all filters that match the query provided.  Use the `slug_value` and `filter_key` to build query.|
 
 **Status Codes**
-- `200 OK` will be returned if query is successful
-- `404 Not Found` will be returned if url is poorly formed
+- `200 OK` will be returned if query is successful.
+- `404 Not Found` will be returned if url is poorly formed.
 
-See getting a single product [here](product.md)
+See getting a single product [here](product.md).
 
 

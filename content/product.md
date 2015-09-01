@@ -10,12 +10,12 @@ Get Product
 
 | Parameter | Value |
 | -------- | ------------ |
-| `casestudy` | use `?casestudy=0` to not include case studies when retrieving a product|
-| `cads` | use `?cads=0` to not include CAD files when not retrieving a product |
+| `casestudy` | Use `?casestudy=0` to not include case studies when retrieving a product.|
+| `cads` | Use `?cads=0` to not include CAD files when not retrieving a product. |
  
  ```
  `GET /api/product/4e7002604ff399d11457cd39?cads=0&casestudy=0` 
- Retrieves a product without cads and case studies 
+ Retrieves a product without any CAD files or case studies.
 ```
 
 **Product Model** 
@@ -142,34 +142,34 @@ Get Product
 
 | Property | Description |
 | -------- | ------------ |
-| `product_id` | ID of product|
-| `product_title` | name of the product|
-| `product_slug` | slugged name of the product|
-| `company_id` | ID of company|
-| `company_name` | company name|
-| `company_logo_url` | url of logo|
-| `company_phone` | contact phone number of company|
-| `company_email` | contact email of company|
-| `company_slug` | slugged name of the company|
-| `product_range` | name of the range to which this product belongs|
-| `product_description` | description of the product HTML encoded|
-| `product_images` | Array of image paths for this product.  each image object has URL for small, medium, and large versions|
-| `product_tech_files` | array of technical files for this product (see model description below)|
-| `product_compliance_docs` | array of compliance files for this product (see model description below)|
-| `product_environmental_docs` | array of supporting environmental files for this product. (see model description below)|
-| `product_cads` | array of supporting CAD files for this product. (see model description below)|
-| `product_videos` | array of supporting YouTube or Vimeo urls for this product. (see model description below)|
-| `product_case_studies` | array of case studies where this product has been used. (see model description below)|
+| `product_id` | ID of product.|
+| `product_title` | Name of the product.|
+| `product_slug` | Slugged name of the product.|
+| `company_id` | ID of company.|
+| `company_name` | Company name.|
+| `company_logo_url` | URL of logo.|
+| `company_phone` | Contact phone number of company.|
+| `company_email` | Contact email of company.|
+| `company_slug` | Slugged name of the company.|
+| `product_range` | Name of the range to which this product belongs.|
+| `product_description` | Description of the product HTML encoded.|
+| `product_images` | Array of image paths for this product. Each image object has a URL for small, medium, and large versions.|
+| `product_tech_files` | Array of technical files for this product. (See model description below)|
+| `product_compliance_docs` | Array of compliance files for this product. (See model description below)|
+| `product_environmental_docs` | Array of supporting environmental files for this product. (See model description below)|
+| `product_cads` | Array of supporting CAD files for this product. (See model description below)|
+| `product_videos` | Array of supporting YouTube or Vimeo urls for this product. (See model description below)|
+| `product_case_studies` | Array of case studies where this product has been used. (See model description below)|
 
 
 **Product Technical File, Compliance Docs, and Environmental Properties**
 
 | Tech File Property | Description |
 | -------- | ------------ |
-| `_id` | ID of file - used to retrieve file|
-| `file_ext` | file extension|
-| `file_group` | group name of this file (e.g., warranty, BRANZ, GreenTag, etc...)|
-| `file_name` | name of file|
+| `_id` | ID of the file. (Used to retrieve the file.)|
+| `file_ext` | File extension.|
+| `file_group` | Group name of this file. (e.g., warranty, BRANZ, GreenTag, etc.)|
+| `file_name` | Name of the file.|
 
 
 
@@ -177,18 +177,18 @@ Get Product
 
 | CAD Property | Description |
 | -------- | ------------ |
-| `file_name` | name of the file|
-| `file_preview_url' | url of the preview image for this CAD |
-| `group_name` | name of the group to which this CAD belongs |
-| `file_types` | array of _ids and extensions for this CAD (one CAD file may have many different file types) |
-| `file_ext` | file extension|
-| `file_group` | group name of this file (e.g., warranty, BRANZ, GreenTag, etc...)|
-| `file_name` | name of file|
+| `file_name` | Name of the file.|
+| `file_preview_url' | URL of the preview image for this CAD file. |
+| `group_name` | Name of the group to which this CAD file belongs. |
+| `file_types` | Array of _ids and extensions for this CAD file. (Note that a single CAD file may have many different file types.) |
+| `file_ext` | File extension.|
+| `file_group` | Group name of this file. (e.g., warranty, BRANZ, GreenTag, etc.)|
+
 
 | CAD file_types Property | Description |
 | -------- | ------------ |
-| `file_extension` | type of file (dwg, pdf, rfa, etc...)|
-| `_id` | the id of the CAD file extension (use this _id to download file.  see below)|
+| `file_extension` | Type of file (dwg, pdf, rfa, etc.).|
+| `_id` | The ID of the CAD file extension. use this _id to download the file. (see below.)|
 
 
 
@@ -196,37 +196,37 @@ Get Product
 
 | Case Study Property | Description |
 | -------- | ------------ |
-| `_id` | id of case study|
-| `title` | the title of the case study |
-| `city' | city location of the case study |
-| `description` | description of the case study. HTML encoded |
-| `project_type` | type of project this case study relates to |
-| `participants` | array of all the participants related to this case study (see below)|
-| `images` | array of images for this case study (see below)|
+| `_id` | ID of the case study.|
+| `title` | The title of the case study. |
+| `city' | City location of the case study. |
+| `description` | Description of the case study. (HTML encoded.) |
+| `project_type` | Type of project that this case study relates to. |
+| `participants` | Array of all the participants related to this case study. (see below.)|
+| `images` | Array of images for this case study. (see below.)|
 | 
 
 | Case Study Participants Property | Description |
 | -------- | ------------ |
-| `job_title` | job title of the participant |
-| `name` | name of the participant |
+| `job_title` | Job title of the participant. |
+| `name` | Name of the participant. |
 
 | Case Study Images Property | Description |
 | -------- | ------------ |
-| `job_title` | job title of the participant |
-| `name` | name of the participant |
+| `job_title` | Job title of the participant. |
+| `name` | Name of the participant. |
 
 
 **Product Videos**
 
 | Case Study Property | Description |
 | -------- | ------------ |
-| `vimeo_url` | Vimeo url or empty string if does not exist |
-| `youtube_url` | YouTube url or empty string if does not exist |
+| `vimeo_url` | Vimeo URL or empty string if a URL does not exist. |
+| `youtube_url` | YouTube URL or empty string if a URL does not exist. |
 
 
 **Status Codes**
-- `200 OK` will be returned if query is successful
-- `404 Not Found` will be returned if product is not found
+- `200 OK` will be returned if query is successful.
+- `404 Not Found` will be returned if a product was not found.
 
 
 
@@ -235,17 +235,14 @@ Get Product
 Download File (CAD, Technical, Compliance, Environmental)
 ---------------------------------------------------------
 
-- `GET /api/file/key/[YourApiKey]/[FileType]/[FileId]`
+- `GET /api/file/key/[YourApiKey]/[FileType]/[FileId]` will either return the file requested or a 404 if file is not found.
 
 | Property | Description |
 | -------- | ------------ |
-| `YourApiKey` | Your api key provided to you by Productspec |
-| `FileType` | tech or cad (all files other than cad files are considered tech) |
-| `FileId` | the id of the file being requested |
+| `YourApiKey` | Your API key provided to you by Productspec. |
+| `FileType` | `tech` or `cad` (all files other than CAD files are considered tech). |
+| `FileId` | the ID of the file being requested. |
 
-
-
-- Will either return the file requested or a 404 if file is not found.
 
 
 
