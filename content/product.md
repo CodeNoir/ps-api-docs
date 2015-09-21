@@ -178,6 +178,7 @@ Get Product
 | `product_cads` | Array of supporting CAD files for this product. (See model description below.)|
 | `product_videos` | Array of supporting YouTube or Vimeo URLs for this product. (See model description below.)|
 | `product_case_studies` | Array of case studies where this product has been used. (See model description below.)|
+| `warranties` | Array of warranties belonging to this product. (see warranty model description below.)|
 
 
 **Product Technical File, Compliance Docs, and Environmental Properties**
@@ -241,6 +242,26 @@ Get Product
 | `vimeo_url` | Returns a Vimeo URL or an empty string if a URL does not exist. |
 | `youtube_url` | Returns a YouTube URL or an empty string if a URL does not exist. |
 
+**Product Warranties**
+
+| Property | Type | Description |
+|----------| ---- | ----------- |
+| `warranty_title` | String | The title of the warranty. |
+| `description` | String | Description of the contents of the warranty. |
+| `warranty_has_doc` | Boolean | Will be `true` if this this warranty has a supporting document. See download file below. |
+| `how_to_claim` | String | Explains how to file a claim on this warranty. (optional) |
+| `exclusions` | String | Any exclusions that may apply to the warranty. (optional) |
+| `validity_period_months` | Number | How long the warranty is valid in number of months. Zero is default. |
+| `_id` | String | The ID of the warranty. |
+| `maintenance` | Array of Objects | All maintenance to which this warranty is subject. See sub model below (optional) |
+
+**Product Warranties Maintenance**
+
+| Property | Type | Description |
+|----------| ---- | ----------- |
+| `_id` | String | The ID of the maintenance. |
+| `description` | String | Description of the contents of the warranty. |
+| `frequency_months` | Number | The frequency, in months, to which this maintenance must be performed. (optional) |
 
 **Status Codes**
 - `200 OK` will be returned if query is successful.
