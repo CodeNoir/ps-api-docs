@@ -134,7 +134,25 @@ Get Product
             "project_type": "Commercial",
             "title": "ASB North Wharf"
         }
-    ]
+    ],
+    "warranties" : [
+		{
+			"warranty_title" : "BUILDING PRODUCT WARRANTY – RESIDENTIAL",
+			"description" : "Firth Industries warrants that Firth Structural and Architectural Masonry Products will for a period of 10 years from the date of purchase:\n• be free from defects outside the acceptable limits specified in NZS4210 and AS/NZS4455 due to factory workmanship or materials\nused in manufacturing the product; and\n• subject to compliance with the conditions attached, that the products will perform to the extent set out in the relevant Firth Industries published literature current at the time of installation.\n\nThis warranty is subject to the storage, installation and maintenance requirements and the other warranty conditions set out in this\ndocument.\nTexture and colour variation due to the natural material used can occur in masonry products and is not deemed a product defect.\nMinor chipping, cracking, or efflorescence is also not deemed a product defect when evaluated and deemed compliant with the Firth\nArchitectural Best Practice Guide.\nNothing in this warranty shall exclude or modify any legal rights a customer may have under the Consumer Guarantees Act 1993 or otherwise which cannot be excluded or modified by law.",
+			"warranty_has_doc" : true,
+			"how_to_claim" : "Contact supplier.",
+			"exclusions" : "No exclusions.",
+			"validity_period_months" : 120,
+			"_id" : "55ff3648a379b3216ed738b3",
+			"maintenance" : [
+				{
+					"description" : "This warranty is subject to Structural and Architectural Masonry products being properly stored, installed and maintained in accordance with the Firth Masonry Home Construction Manual, the Firth Architectural Best Practice Guide and the Firth Structural and Architectural Masonry Product Technical Statement.",
+					"_id" : "55ff3648a379b3216ed738b4",
+					"frequency_months" : 24
+				}
+			]
+		}
+	]
 }
 ```
 
