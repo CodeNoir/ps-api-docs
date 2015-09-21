@@ -250,7 +250,7 @@ Get Product
 
 
 
-Download File (CAD, Technical, Compliance, Environmental)
+Download File (CAD, Technical, Compliance, Environmenta, Warranty)
 ---------------------------------------------------------
 
 - `GET /api/file/key/[YourApiKey]/[FileType]/[FileId]` will either return the file requested or a 404 if file is not found.
@@ -258,7 +258,7 @@ Download File (CAD, Technical, Compliance, Environmental)
 | Property | Description |
 | -------- | ------------ |
 | `YourApiKey` | Your API key provided to you by Productspec. |
-| `FileType` | `tech` or `cad` (all files other than CAD files are considered tech). |
+| `FileType` | `tech`, `cad`, `warranty` (all files other than CAD and Warranty files are considered tech). |
 | `FileId` | The ID of the file being requested. |
 
 
