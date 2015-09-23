@@ -273,7 +273,7 @@ Get Product
 
 
 
-Download File (CAD, Technical, Compliance, Environmenta, Warranty)
+Download File (CAD, Technical, Compliance, Environmental, Warranty)
 ---------------------------------------------------------
 
 - `GET /api/file/key/[YourApiKey]/[FileType]/[FileId]` will either return the file requested or a 404 if file is not found.
@@ -284,6 +284,15 @@ Download File (CAD, Technical, Compliance, Environmenta, Warranty)
 | `FileType` | `tech`, `cad`, `warranty` (all files other than CAD and Warranty files are considered tech). |
 | `FileId` | The ID of the file being requested. |
 
+**File Download URL Examples**
+
+| File Type | Example URL |
+| -------- | ------------ |
+| `warranty` | /api/file/key/[api_key]/`warranty`/[warranty_id] |
+| `cad` | /api/file/key/[api_key]/`cad`/[cad_file_type_id] |
+| `technical file` | /api/file/key/[api_key]/`tech`/[product_tech_file_id] |
+| `compliance document` | /api/file/key/[api_key]/`tech`/[product_compliance_docs_id] |
+| `environmental document` | /api/file/key/[api_key]/`tech`/[product_environmental_docs_id] |
 
 
 
