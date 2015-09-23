@@ -140,6 +140,7 @@ Get Product
 			"warranty_title" : "BUILDING PRODUCT WARRANTY – RESIDENTIAL",
 			"description" : "Firth Industries warrants that Firth Structural and Architectural Masonry Products will for a period of 10 years from the date of purchase:\n• be free from defects outside the acceptable limits specified in NZS4210 and AS/NZS4455 due to factory workmanship or materials\nused in manufacturing the product; and\n• subject to compliance with the conditions attached, that the products will perform to the extent set out in the relevant Firth Industries published literature current at the time of installation.\n\nThis warranty is subject to the storage, installation and maintenance requirements and the other warranty conditions set out in this\ndocument.\nTexture and colour variation due to the natural material used can occur in masonry products and is not deemed a product defect.\nMinor chipping, cracking, or efflorescence is also not deemed a product defect when evaluated and deemed compliant with the Firth\nArchitectural Best Practice Guide.\nNothing in this warranty shall exclude or modify any legal rights a customer may have under the Consumer Guarantees Act 1993 or otherwise which cannot be excluded or modified by law.",
 			"warranty_has_doc" : true,
+			"transferable": false,
 			"how_to_claim" : "Contact supplier.",
 			"exclusions" : "No exclusions.",
 			"validity_period_months" : 120,
@@ -247,6 +248,7 @@ Get Product
 | Property | Type | Description |
 |----------| ---- | ----------- |
 | `warranty_title` | String | The title of the warranty. |
+| `transferable` | Boolean | Will be `true` if this warranty is transferable. |
 | `description` | String | Description of the contents of the warranty. |
 | `warranty_has_doc` | Boolean | Will be `true` if this this warranty has a supporting document. See download file below. |
 | `how_to_claim` | String | Explains how to file a claim on this warranty. (optional) |
