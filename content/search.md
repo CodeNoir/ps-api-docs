@@ -15,6 +15,7 @@ Search for products
 | `primary: string` | false    | `GET /api/search?primary=cladding` gets all products found for the primary category 'cladding.'  |
 | `secondary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards` gets all products found for the primary category 'cladding' and secondary category 'weatherboards.' <br> When using the secondary category the primary category must be included.|
 | `tertiary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards&tertiary=pvc-weatherboards` will get all products found for the primary, secondary, and tertiary categories provided.  |
+| `warranty: string` | false    | `GET /api/search?warranty=1` returns only products that have a warranty. Value must be `1` to be true  |
 | `page: string` | false    | `GET /api/search?page=2` returns the results for page number '2.'  |
 
 **Compound Filters**
@@ -46,6 +47,16 @@ Search for products
                 }
             ],
             "filter_key": "companies"
+        },
+        {
+            "filter_items": [
+                {
+                    "count": 1,
+                    "slug_value": "warranty",
+                    "value": "warranty"
+                }
+            ],
+            "filter_key": "warranty"
         },
         {
             "filter_items": [
