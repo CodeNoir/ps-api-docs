@@ -24,7 +24,7 @@ Get Primary Categories
 
 *Use the `primary_slug` with the `primary` parameter when searching.*
  
- - `GET /api/search/primary=cladding` where `cladding` is the `primary_slug` value.
+ - `GET /api/search/?primary=cladding` where `cladding` is the `primary_slug` value.
  
 See searching for products [here](search.md).
  
