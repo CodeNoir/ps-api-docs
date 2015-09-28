@@ -16,7 +16,8 @@ Search for products
 | `secondary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards` gets all products found for the primary category 'cladding' and secondary category 'weatherboards.' <br> When using the secondary category the primary category must be included.|
 | `tertiary: string` | false    | `GET /api/search?primary=cladding&secondary=weatherboards&tertiary=pvc-weatherboards` will get all products found for the primary, secondary, and tertiary categories provided.  |
 | `warranty: string` | false    | `GET /api/search?warranty=1` returns only products that have a warranty. Value must be `1` to be true  |
-| `page: string` | false    | `GET /api/search?page=2` returns the results for page number '2.'  |
+| `page: number` | false    | `GET /api/search?page=2` returns the results for page number '2'. Default is 1  |
+| `limit: number` | false |  `GET /api/search?page=1&limit=50` returns 50 results.  Default is 25 and max is 100 |
 
 **Compound Filters**
 
