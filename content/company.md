@@ -4,7 +4,7 @@ Categories
 Get Companies
 ----------------------
 
- - `GET /api/company/all` will return all primary categories.
+ - `GET /api/company/all` will return all companies that are available for your api_key.
  
 ```json
 [
