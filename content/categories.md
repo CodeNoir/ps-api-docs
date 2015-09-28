@@ -10,7 +10,7 @@ Get Primary Categories
 [
   {
     "primary": "Cladding'",
-    "primary_slug": 47
+    "primary_slug": "cladding"
   }
 ]
 ```
