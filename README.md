@@ -6,6 +6,7 @@ API Objects
 -----------
 
 - [Primary Categories](content/categories.md)
+- [Companies](content/company.md)
 - [Filter Products](content/search.md)
 - [GET Product](content/product.md)
 
