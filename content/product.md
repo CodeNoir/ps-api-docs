@@ -153,7 +153,17 @@ Get Product
 				}
 			]
 		}
-	]
+	],
+	"product_categories": [
+    {
+      "primary": "Adhesives & Compounds",
+      "primary_slug": "adhesives-and-compounds",
+      "secondary": "Adhesives & Fastenings",
+      "secondary_slug": "adhesives-and-fastenings",
+      "tertiary": "Tile Adhesives",
+      "tertiary_slug": "tile-adhesives"
+    }
+  ]
 }
 ```
 
@@ -180,6 +190,7 @@ Get Product
 | `product_videos` | Array of supporting YouTube or Vimeo URLs for this product. (See model description below.)|
 | `product_case_studies` | Array of case studies where this product has been used. (See model description below.)|
 | `warranties` | Array of warranties belonging to this product. (see warranty model description below.)|
+| `product_categories` | Array of categories that this product belongs to.|
 
 
 **Product Technical File, Compliance Docs, and Environmental Properties**
